@@ -20,7 +20,7 @@ COPY . .
 
 # set listen port
 ENV PORT "8080"
-ENV DISABLE_TRACING
+ENV DISABLE_TRACING "true"
 EXPOSE 8080
 
 ENTRYPOINT ["python", "/recommendationservice/recommendation_server.py"]
